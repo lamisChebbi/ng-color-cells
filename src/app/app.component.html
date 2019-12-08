@@ -1,0 +1,20 @@
+<div class="parent grid">
+	<div>
+		<div class="cell" *ngFor="let i of [1,2,3,4]">
+			<div *ngIf="i%2===0" class="circle"></div>
+		</div>
+	</div>
+	<div>
+		<div class="cell" *ngFor="let i of [1,2,3,4]">
+		</div>
+	</div>
+	<div>
+		<div class="cell" *ngFor="let i of [1,2,3,4]">
+			<div *ngIf="i%2!=0" class="circle"></div>
+		</div>
+		<div>
+			<div class="cell" *ngFor="let i of [1,2,3,4]">
+			</div>
+		</div>
+	</div>
+</div>
